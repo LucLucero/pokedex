@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/header.css">
+    <link rel="stylesheet" href="/style/searchBar.css">
+    <link rel="stylesheet" href="/style/main-page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <script src="/scripts/scripts.js"></script>
+    <title>PokeDex</title>
+    
+</head>    
+
+<body>
+    <div id="container">
+        <div id="content">
+            <header>
+
+                <img  id ="pokeball" src="/images/Pokeball.svg" alt="pokeballIcon">
+                    <h2>Pokédex</h2>
+                <button id="Filter"><img src="/images/A Z.svg" alt="AZ-Filter">
+                    <img id="vector" src="/images/Vector.svg" alt="DownArrow"></button>
+                
+                
+            </header>
+
+            <div class="searchBar">   
+                <img src="/images/lupa.svg" alt="">     
+                <input type="text" name="search" id="searchbar"
+                onkeyup="searchPokemon()" placeholder = "Search your Favorite Pokemon">
+            </div>
+
+                <!-- div pokemons será criada pelo backend -->
+
+        </div>                
+    </div>
+</body>
+</html>

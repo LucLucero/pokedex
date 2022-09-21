@@ -1,0 +1,19 @@
+div .searchBar {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:8px;
+    border: solid 1px;
+    padding: 3px 4px;
+    margin: 0 10px 0 10px;
+    border-color: #E0E0E0;
+}
+
+div #searchbar{
+
+    border: none;
+    outline: none;
+    width: 200px;
+
+}
