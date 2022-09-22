@@ -1,0 +1,76 @@
+:root {
+
+    --grass-type:#74CB48;
+    --poison-type:#A43E9E;
+    --bug-type:#A7B723;
+    --dragon-type:#F5FFC6;
+    --electric-type:#F9CF30;
+    --fairy-type:#B899FF;
+    --fighting-type:#C9A97E;
+    --fire-type:#F57D31;
+    --flying-type:#A891EC;
+    --ghost-type:#70559B;  
+    --ground-type:#906D3C;
+    --ice-type:#CCDAD1;
+    --normal-type:#AAA67F;
+    --psychic-type:#FB5584;
+    --rock-type:#B69E31;
+    --steel-type:#B7B9D0;
+    --water-type:#6493EB;
+
+}
+
+div #pokemon-box {
+
+    display: flex;       
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 16px;
+
+}
+
+#pokemon-box div{
+
+    border: solid 1px;    
+    border-radius: 15px;
+    width:104px;
+    height: 112px; 
+    margin: 4px 0px 4px 0px;
+
+}
+
+div #pokemon-box h2 {
+     
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 16px;
+    color: black;
+    position: relative;    
+    top: 8.5em;
+    text-align: center;
+    text-transform: capitalize;
+   
+  }
+  
+  div #pokemon-box h3 {
+  
+      position: relative;      
+      bottom: 10px;
+      margin: 0 5px 0 0;
+      text-align: end;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 400;
+      font-size: 8px;
+      line-height: 12px;
+
+  }
+  
+  div #pokemon-box img {
+  
+     position: relative;
+     bottom: 30px;
+     left: 5px;
+
+  }
