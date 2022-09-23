@@ -37,28 +37,120 @@ async function createPokemon(pokeNumber){
     const pokemonBox = document.getElementById('pokemon-box');
     const div = document.createElement('div');
     div.setAttribute("id", "poke");
+    const nomePoke = document.createElement('div');
+    nomePoke.setAttribute("id", "nomePoke");    
     const h2Name = document.createElement('h2');
     const h3Id = document.createElement('h3');
     const img = document.createElement('img');
-    const borderColor = div.style.borderColor = ghostType;
-    const tipo = document.createElement('p');
 
-    //conteudo dos elementos
-   // borderColor = pokemon.ty
+    let tipo = pokemon.types[0]["type"];
+    pokemonTipo = (tipo.name);
 
-    
-    tipo.textContent = `${pokemon.type}`;
+    let corBorda = `${tipo.name}Type`;
+    //console.log(corBorda);
+
+    switch(corBorda){
+        case 'grassType':
+            div.style.borderColor = grassType;
+            h2Name.style.backgroundColor = grassType;
+            break;
+        
+        case 'poisonType':
+            div.style.borderColor = poisonType;
+            h2Name.style.backgroundColor = poisonType;
+            break; 
+        case 'bugType':
+            div.style.borderColor = bugType;
+            h2Name.style.backgroundColor = bugType;
+            break;
+
+        case 'dragonType':
+            div.style.borderColor = dragonType;
+            h2Name.style.backgroundColor =dragonType;
+            break;
+
+        case 'fairyType':
+            div.style.borderColor = fairyType;
+            h2Name.style.backgroundColor = fairyType;
+            break;
+        
+        case 'fightingType':
+            div.style.borderColor = fightingType;
+            h2Name.style.backgroundColor = fightingType;
+            break;
+
+        case 'fireType':
+            div.style.borderColor = fireType;
+            h2Name.style.backgroundColor = fireType;
+            break;
+
+        case 'fireType':
+            div.style.borderColor = fireType;
+            h2Name.style.backgroundColor = fireType;
+            break;
+
+        case 'flyingType':
+            div.style.borderColor = flyingType;
+            h2Name.style.backgroundColor = flyingType;
+            break;
+
+        case 'ghostType':
+            div.style.borderColor = ghostType;
+            h2Name.style.backgroundColor = ghostType;
+            break;
+
+        case 'groundType':
+            div.style.borderColor = groundType;
+            h2Name.style.backgroundColor = groundType;
+            break;
+
+        case 'iceType':
+            div.style.borderColor = iceType;
+            h2Name.style.backgroundColor = iceType;
+            break;
+
+        case 'normalType':
+            div.style.borderColor = normalType;
+            h2Name.style.backgroundColor = normalType;
+            break;
+
+        case 'psychicType':
+            div.style.borderColor = psychicType;
+            h2Name.style.backgroundColor = psychicType;
+            break;
+        case 'rockType':
+            div.style.borderColor = rockType;
+            h2Name.style.backgroundColor = rockType;
+            break;
+        case 'steelType':
+            div.style.borderColor = steelType;
+            h2Name.style.backgroundColor = steelType;
+            break;
+        case 'waterType':
+            div.style.borderColor = waterType;
+            h2Name.style.backgroundColor = waterType;
+            break;
+        case 'electricType':
+            div.style.borderColor = electricType;
+            h2Name.style.backgroundColor = electricType;
+            break;
+    }
+
+    //
+
+            
     h2Name.textContent = `${pokemon.name}`;
     h3Id.textContent = `#${pokemon.id}`;
     img.src = pokemon.sprites.front_default;
 
     // Adicionando os elementos no html
-
-    div.appendChild(tipo);
-    div.appendChild(h2Name);
+    
+    nomePoke.appendChild(h2Name);
+    
     div.appendChild(h3Id);
     div.appendChild(img);
-    //div.appendChild(borderColor);
+    div.appendChild(nomePoke);
+    
     
     pokemonBox.appendChild(div);
     
