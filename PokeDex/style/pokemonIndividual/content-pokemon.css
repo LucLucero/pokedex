@@ -1,5 +1,7 @@
 #content-pokemon {
 
+
+    
     height: 640px;
     width: 360px; 
     border-radius: 12px;
@@ -14,4 +16,22 @@
     height: 208px;
     width: 208px;
        
+}
+
+#imgs {
+
+    display: flex;
+
+}
+
+
+#pokemonSprite {
+
+    position: relative;
+    width: 200px;
+    height: 200px;   
+    right: 123px;
+    z-index: 1;
+
+
 }

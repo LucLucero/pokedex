@@ -23,10 +23,12 @@
                 <h3 id="pokemonOrder">#001</h3>                
 
             </header>
-
-            <img id="pokeballBkg" src="./images/Pokeball_fundo.svg" alt="">
+            <div id="imgs">
+                <img id="pokeballBkg" src="./images/Pokeball_fundo.svg" alt="">
             
-            <img id="pokemonSprite" src="" alt="">
+                <img id="pokemonSprite" src="" alt="">
+            </div>
+            
             <div id="data-pokemon">
                 <div id="types">
 
@@ -70,34 +72,69 @@
                 <h3>Base Status</h3>
                 <div id="stats">
 
+                    <div id="statsNames">
+                        <h4 >HP</h4>                    
+                        <h4 >ATK</h4>                    
+                        <h4 >DEF</h4>                    
+                        <h4 >SATK</h4>                    
+                        <h4 >SDEF</h4>                    
+                        <h4 >SPD</h4>
+                       
+                    </div>
 
-                    <div class="skillbar">
-                        ATK
-                        <div>
+                    <div id="status">
+                        <h4 id="hp"></h4>
+                        <h4 id="atk"></h4>
+                        <h4 id="def"></h4>
+                        <h4 id="stak"></h4>
+                        <h4 id="sdef"></h4>
+                        <h4 id="spd"></h4>
+
+
+                    </div>
+
+                    <div  id="skills" class="skills"> 
+
+                       
+
+                        <div class="skill">
+
+                            <div id="skill_hp"></div>
+                            
                             
                         </div>
-                        <h4 id="atk"></h4>
-                    </div>
-                    <div class="skillbar">
-                        DEF
-                        <h4 id="def"></h4>
-                    </div>
-                    <div class="skillbar">
-                        SDEF
-                        <h4 id="sdef"></h4>
-                    </div>
-                    <div class="skillbar">
-                        SATK
-                        <h4 id="stak"></h4>
-                    </div>
-                    <div class="skillbar">
-                        HP
-                        <h4 id="hp"></h4>
-                    </div>
-                    <div class="skillbar">
-                        SPD
-                        <h4 id="spd"></h4>
-                    </div>                  
+                        <div class="skill">
+                            <div id="skill_atk">
+                            </div>
+                            
+                            
+                        </div>
+                        <div class="skill">
+                            <div id="skill_def">
+                                
+                            </div>
+                            
+                        </div>
+                        <div class="skill">
+                            <div id="skill_satk">
+                            </div>
+                            
+                        </div>
+                        <div class="skill">
+                            
+                            <div id="skill_sdef">
+                                
+                            </div>
+                        </div>
+                        <div class="skill">
+                            
+                            <div id="skill_spd">
+                                
+                            </div>
+                        </div>
+                        
+                      
+                    </div>        
                     
                     
                 </div>
