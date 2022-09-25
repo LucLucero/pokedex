@@ -1,0 +1,17 @@
+#content-pokemon {
+
+    height: 640px;
+    width: 360px; 
+    border-radius: 12px;
+    
+
+}
+#content-pokemon #pokeballBkg {
+
+    position: relative;
+    left: 144px;    
+    bottom: 80px;
+    height: 208px;
+    width: 208px;
+       
+}

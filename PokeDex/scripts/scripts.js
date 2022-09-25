@@ -8,7 +8,7 @@ async function fetchData(pokeNumber) {
 let grassType = '#74CB48';
 let poisonType = '#A43E9E';
 let bugType = '#A7B723';
-let dragonType = '#F5FFC6';
+let dragonType = '#7037FF';
 let electricType = '#F9CF30';
 let fairyType = '#B899FF';
 let fightingType = '#C9A97E';
@@ -23,14 +23,13 @@ let rockType = '#B69E31';
 let steelType = '#B7B9D0';
 let waterType = '#6493EB';
 
+let number;
 
 async function createPokemon(pokeNumber){
-
+    
 
     const pokemon = await fetchData(pokeNumber);
     console.log(pokemon);
-
-    // criando os elementos
 
     const container = document.getElementById('container');
     const content = document.getElementById('content');
@@ -41,11 +40,23 @@ async function createPokemon(pokeNumber){
     nomePoke.setAttribute("id", "nomePoke");    
     const h2Name = document.createElement('h2');
     const h3Id = document.createElement('h3');
-    const img = document.createElement('img');
+    const img = document.createElement('img');    
+    const button = document.createElement('button');
+
+    button.addEventListener('click', function(){
+
+        console.log(`nome do click é ${pokemon.name}`);             
+        location = "./pokemon.html";
+        number = `${pokemon.id}`;
+        location.assign("./pokemon.html#" + number);
+
+    });
+
+
+
+    //a.setAttribute('href','./pokemon.html');
 
     let tipo = pokemon.types[0]["type"];
-    pokemonTipo = (tipo.name);
-
     let corBorda = `${tipo.name}Type`;
     //console.log(corBorda);
 
@@ -136,26 +147,22 @@ async function createPokemon(pokeNumber){
             break;
     }
 
-    //
-
-            
     h2Name.textContent = `${pokemon.name}`;
     h3Id.textContent = `#${pokemon.id}`;
     img.src = pokemon.sprites.front_default;
 
     // Adicionando os elementos no html
     
+    
+    button.appendChild(img);
     nomePoke.appendChild(h2Name);
-    
-    div.appendChild(h3Id);
-    div.appendChild(img);
+    div.appendChild(h3Id);    
+    div.appendChild(button);
     div.appendChild(nomePoke);
-    
-    
-    pokemonBox.appendChild(div);
+    pokemonBox.appendChild(div);    
     
 }
 
 
-const pokeNumbers = [3,6,9,94,151,149,123,125,131];
+const pokeNumbers = [3,6,9,94,126,149,123,125,131];
 pokeNumbers.forEach(createPokemon);

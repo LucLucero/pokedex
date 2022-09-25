@@ -49,21 +49,21 @@ div #pokemon-box {
 div #pokemon-box #nomePoke h2 {
 
     position: relative;
-    bottom:30px;
+    bottom: 27px;
     padding: 0.5em;    
     border-radius: 0 0 15px 15px;  
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 10px;
     line-height: 16px;
-    color: black;    
+    color: white;    
     text-align: center;
     text-transform: capitalize;    
     
         
    
   }
-  
+
   div #pokemon-box h3 {
   
       position: relative;
@@ -78,11 +78,24 @@ div #pokemon-box #nomePoke h2 {
 
   }
   
-  div #pokemon-box img {
+  div #pokemon-box img{
   
    position: relative;
-   bottom: 20px;
+   bottom: 15px;
 
   }
 
  
+  div #pokemon-box button {
+
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    
+    
+    
+
+  }
